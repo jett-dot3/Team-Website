@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Matthew Jett — Information Systems and Decision Sciences (ISDS) Student at Louisiana State University (LSU). Professional resume, experience, skills, and projects.">
+  <meta name="keywords" content="Matthew Jett, Resume, LSU, Information Systems, Decision Sciences, ISDS, Python, Excel, Business Analytics, Denham Springs Louisiana">
+  <meta name="author" content="Matthew Jett">
+
+  <title>Matthew Jett | Resume & Portfolio | LSU Information Systems & Decision Sciences</title>
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       NAVIGATION BAR
+       ========================================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#about" class="nav-brand" aria-label="Matthew Jett Home">
+        <div class="brand-monogram">MJ</div>
+        <span>Matthew Jett</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#about" class="nav-link active">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#activities" class="nav-link">Leadership</a></li>
+          <li>
+            <a href="./project.html" class="nav-link-badge" id="navProjectLink">
+              <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              Project Showcase
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Print & Contact) -->
+      <div class="nav-actions">
+        <button type="button" class="btn btn-secondary btn-sm js-print-resume" id="navPrintBtn" title="Print or save as PDF">
+          <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+          </svg>
+          Print Resume
+        </button>
+        <button type="button" class="btn btn-primary btn-sm js-open-contact" id="navContactBtn">
+          Contact Me
+        </button>
+        <button type="button" class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         HERO SECTION (ABOUT & SUMMARY)
+         ========================================================================= -->
+    <section class="section hero-section" id="about">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <div class="hero-pill-badge">
+              <span class="lsu-dot"></span>
+              <span>LSU • Information Systems & Decision Sciences • Class of 2026</span>
+            </div>
+            <h1 class="hero-title">Matthew Jett</h1>
+            <h2 class="hero-role">ISDS Student & Business Operations Specialist</h2>
+
+            <p class="hero-bio">
+              Results-driven Information Systems and Decision Sciences (ISDS) student at Louisiana State University 
+              with practical experience spanning retail merchandising, parts logistics, inventory auditing, and high-volume guest relations. 
+              Proficient in Python, HTML, and data analysis with Microsoft Excel, passionate about leveraging technology 
+              and analytics to solve real-world operational challenges.
+            </p>
+
+            <!-- Quick Metadata (Location & Direct Email) -->
+            <div class="hero-meta-bar">
+              <div class="meta-item">
+                <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span>Denham Springs, Louisiana</span>
+              </div>
+
+              <!-- Interactive Email Pill -->
+              <div class="email-copy-pill" id="heroCopyEmail" title="Click to copy email address">
+                <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <span>matthewpjett@gmail.com</span>
+                <span class="copy-status-text">(Click to copy)</span>
+              </div>
+            </div>
+
+            <!-- Call to Actions -->
+            <div class="hero-cta-group">
+              <button type="button" class="btn btn-primary js-open-contact" id="heroContactBtn">
+                <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                Contact Me
+              </button>
+
+              <a href="./project.html" class="btn btn-outline-gold" id="heroExploreProjectBtn">
+                <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+                View Project Showcase →
+              </a>
+
+              <button type="button" class="btn btn-secondary js-print-resume" id="heroPrintBtn">
+                <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Download / Print
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Highlights Ribbon -->
+        <div class="stats-ribbon">
+          <div class="stat-item">
+            <span class="stat-value text-gold">May 2026</span>
+            <span class="stat-label">Graduation (LSU)</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value text-gradient">ISDS</span>
+            <span class="stat-label">Information Systems</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">4 Roles</span>
+            <span class="stat-label">Work Experience</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">Python & Excel</span>
+            <span class="stat-label">Core Tech Tooling</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         EDUCATION SECTION
+         ========================================================================= -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">Rigorous coursework combining business strategy, statistical analysis, and information systems engineering.</p>
+        </div>
+
+        <div class="card card-glow-accent education-card">
+          <div class="lsu-badge-container">
+            <span class="lsu-text">LSU</span>
+            <span class="lsu-sub">Tigers</span>
+          </div>
+          <div>
+            <div class="edu-header">
+              <h3 class="edu-school">Louisiana State University (LSU), Baton Rouge, LA</h3>
+              <span class="edu-date">Expected May 2026</span>
+            </div>
+            <p class="edu-degree">Bachelor of Sciences, Information Systems, and Decision Sciences (ISDS)</p>
+            <p style="color: var(--text-secondary); font-size: 0.95rem;">
+              The ISDS curriculum focuses on designing, analyzing, and deploying enterprise information systems, applying 
+              business analytics and quantitative modeling to solve complex managerial decisions.
+            </p>
+
+            <div class="coursework-box">
+              <h4 class="coursework-title">Key Related Coursework</h4>
+              <div class="tag-cloud">
+                <span class="chip chip-gold">Management Information Systems</span>
+                <span class="chip chip-gold">Business Statistics and Analytics</span>
+                <span class="chip chip-gold">Business Information Systems</span>
+                <span class="chip">Financial Accounting</span>
+                <span class="chip">Managerial Accounting</span>
+                <span class="chip">Applied Calculus</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         WORK EXPERIENCE SECTION
+         ========================================================================= -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career History</span>
+          <h2 class="section-title">Work Experience</h2>
+          <p class="section-subtitle">Proven track record in customer service, retail merchandising, inventory tracking, and facility operations.</p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Job 1: ZEA Rotisserie and Bar -->
+          <article class="card experience-card">
+            <div class="exp-sidebar">
+              <div class="exp-period">August 2024 – Present</div>
+              <h3 class="exp-company">ZEA Rotisserie and Bar</h3>
+              <div class="exp-location">
+                <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                </svg>
+                Baton Rouge, LA
+              </div>
+              <span class="exp-badge-active">Current Position</span>
+            </div>
+            <div class="exp-content">
+              <h4 class="exp-role-title">Server</h4>
+              <ul class="exp-bullets">
+                <li>Delivered customer service by anticipating guest needs and providing a welcoming and friendly dining experience.</li>
+                <li>Managed multiple tables efficiently in a fast-paced environment, ensuring accurate order-taking and timely delivery of food and beverages.</li>
+                <li>Communicated effectively with kitchen staff and management to promptly accommodate special requests and resolve issues.</li>
+              </ul>
+              <div class="exp-tags">
+                <span class="chip">Customer Service</span>
+                <span class="chip">High-Volume Operations</span>
+                <span class="chip">Multitasking</span>
+                <span class="chip">Communication</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Job 2: Scotts Miracle-Gro -->
+          <article class="card experience-card">
+            <div class="exp-sidebar">
+              <div class="exp-period">January 2024 – July 2024</div>
+              <h3 class="exp-company">Scotts Miracle-Gro</h3>
+              <div class="exp-location">
+                <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                </svg>
+                Baton Rouge, LA
+              </div>
+            </div>
+            <div class="exp-content">
+              <h4 class="exp-role-title">Marketing Associate</h4>
+              <ul class="exp-bullets">
+                <li>Maintained and restocked product displays in retail locations to ensure maximum visibility and sales potential.</li>
+                <li>Built and nurtured relationships with store management and staff to promote brand loyalty and secure prime merchandising space.</li>
+                <li>Conducted inventory audits to track product levels and identify restocking needs.</li>
+              </ul>
+              <div class="exp-tags">
+                <span class="chip">Inventory Auditing</span>
+                <span class="chip">Merchandising</span>
+                <span class="chip">Account Management</span>
+                <span class="chip">Retail Analytics</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Job 3: C&M Outdoor Power -->
+          <article class="card experience-card">
+            <div class="exp-sidebar">
+              <div class="exp-period">May 2023 – September 2023</div>
+              <h3 class="exp-company">C&M Outdoor Power</h3>
+              <div class="exp-location">
+                <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                </svg>
+                Denham Springs, LA
+              </div>
+            </div>
+            <div class="exp-content">
+              <h4 class="exp-role-title">Service Assistant</h4>
+              <ul class="exp-bullets">
+                <li>Managed the shipping and ordering of parts and equipment and kept accurate records of all transactions.</li>
+                <li>Provided quality service to customers who needed assistance with fixing or buying new equipment.</li>
+                <li>Took care of the reception and organization of machines and equipment.</li>
+              </ul>
+              <div class="exp-tags">
+                <span class="chip">Parts Ordering</span>
+                <span class="chip">Logistics</span>
+                <span class="chip">Transaction Records</span>
+                <span class="chip">Client Support</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Job 4: Carter Plantation Golf Resort -->
+          <article class="card experience-card">
+            <div class="exp-sidebar">
+              <div class="exp-period">May 2021 – August 2022</div>
+              <h3 class="exp-company">Carter Plantation Golf Resort</h3>
+              <div class="exp-location">
+                <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                </svg>
+                Springfield, LA
+              </div>
+            </div>
+            <div class="exp-content">
+              <h4 class="exp-role-title">Pro Shop Attendant</h4>
+              <ul class="exp-bullets">
+                <li>Managed daily operations of the Pro Shop, including sales, inventory management, and merchandise displays.</li>
+                <li>Provided customer service to members and guests, ensuring a welcoming and professional environment.</li>
+                <li>Handled tee time reservations, coordinated scheduling, and maintained accurate records.</li>
+              </ul>
+              <div class="exp-tags">
+                <span class="chip">Point of Sale (POS)</span>
+                <span class="chip">Inventory Control</span>
+                <span class="chip">Scheduling & Reservations</span>
+                <span class="chip">Hospitality</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         TECHNICAL & PROFESSIONAL SKILLS SECTION
+         ========================================================================= -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Capabilities</span>
+          <h2 class="section-title">Technical & Professional Skills</h2>
+          <p class="section-subtitle">Core software proficiencies, programming languages, and business operational competencies.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming & Web Card -->
+          <div class="card skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Programming & Web</h3>
+            </div>
+            <div class="skill-pills-list">
+              <span class="skill-badge featured">Python</span>
+              <span class="skill-badge featured">HTML5</span>
+              <span class="skill-badge">CSS & Responsive Design</span>
+              <span class="skill-badge">Data Structures</span>
+              <span class="skill-badge">Automation Scripting</span>
+            </div>
+          </div>
+
+          <!-- Business Analytics & Productivity -->
+          <div class="card skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Software & Analytics</h3>
+            </div>
+            <div class="skill-pills-list">
+              <span class="skill-badge featured">Microsoft Excel</span>
+              <span class="skill-badge featured">Microsoft Office Suite</span>
+              <span class="skill-badge featured">Google Applications</span>
+              <span class="skill-badge">Pivot Tables & Formulas</span>
+              <span class="skill-badge">Business Statistics</span>
+            </div>
+          </div>
+
+          <!-- Operations & Business Management -->
+          <div class="card skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Operations & Management</h3>
+            </div>
+            <div class="skill-pills-list">
+              <span class="skill-badge">Inventory Auditing</span>
+              <span class="skill-badge">Shipping & Parts Logistics</span>
+              <span class="skill-badge">Customer Relationship Mgmt</span>
+              <span class="skill-badge">POS & Scheduling Systems</span>
+              <span class="skill-badge">Team Communication</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         ACTIVITIES & LEADERSHIP SECTION
+         ========================================================================= -->
+    <section class="section" id="activities">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Campus Involvement</span>
+          <h2 class="section-title">Activities & Leadership</h2>
+          <p class="section-subtitle">Extracurricular engagement and fraternal leadership at Louisiana State University.</p>
+        </div>
+
+        <div class="card activities-card">
+          <div class="frat-badge" title="Sigma Chi">ΣΧ</div>
+          <div>
+            <h3 class="activities-title">Member of LSU Sigma Chi Fraternity</h3>
+            <div class="activities-chapter">Gamma Iota Chapter • Louisiana State University</div>
+            <p class="activities-desc">
+              Active brother contributing to fraternal operations, campus leadership development, 
+              philanthropic fundraising for the Huntsman Cancer Foundation, and fostering lifelong values of character, 
+              brotherhood, and community service.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         FEATURED PROJECT SPOTLIGHT (LINK TO 2ND PAGE)
+         ========================================================================= -->
+    <section class="section" id="project-preview">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Case Study Spotlight</h2>
+          <p class="section-subtitle">Explore an in-depth project demonstrating applied Information Systems and data decision modeling.</p>
+        </div>
+
+        <div class="card project-spotlight-card">
+          <div class="spotlight-info">
+            <span class="spotlight-badge">ISDS & Python Project</span>
+            <h3 class="spotlight-title">Retail Inventory Optimization & Decision Support Analytics</h3>
+            <p class="spotlight-desc">
+              An analytical decision-support system designed to automate inventory auditing, predict stockout risks, 
+              and optimize restocking schedules using Python data processing and Excel data modeling.
+            </p>
+            <div class="spotlight-tags">
+              <span class="chip chip-gold">Python</span>
+              <span class="chip chip-gold">Microsoft Excel</span>
+              <span class="chip">Data Modeling</span>
+              <span class="chip">Inventory Audits</span>
+              <span class="chip">Decision Systems</span>
+            </div>
+            <div style="margin-top: 1rem;">
+              <a href="./project.html" class="btn btn-primary" id="viewProjectCaseStudyBtn">
+                Read Full Case Study
+                <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="spotlight-img-wrapper">
+            <img src="./assets/images/dashboard-preview.jpg" alt="Inventory & Decision Support Analytics UI Preview" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       CONTACT MODAL (Triggered by Contact Me buttons)
+       Displays phone number (225) 788-1050 & email with copy/call actions
+       ========================================================================= -->
+  <div class="modal-overlay" id="contactModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" id="closeModalBtn" aria-label="Close dialog">&times;</button>
+      
+      <div class="modal-header">
+        <div class="section-tag" style="margin-bottom: 0.5rem;">Get In Touch</div>
+        <h3 class="modal-title" id="modalTitle">Contact Matthew Jett</h3>
+        <p style="font-size: 0.9rem; color: var(--text-secondary);">
+          Feel free to reach out directly via phone or email for opportunities, inquiries, or networking.
+        </p>
+      </div>
+
+      <div class="modal-contacts-list">
+        <!-- Phone Contact Tile -->
+        <div class="contact-tile">
+          <div class="contact-tile-info">
+            <div class="contact-tile-icon">
+              <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+            </div>
+            <div>
+              <div class="contact-tile-label">Phone Number</div>
+              <div class="contact-tile-val">(225) 788-1050</div>
+            </div>
+          </div>
+          <div style="display: flex; gap: 0.4rem;">
+            <a href="tel:2257881050" class="btn btn-primary btn-sm" title="Call directly">Call</a>
+            <button type="button" class="btn btn-secondary btn-sm" id="copyModalPhoneBtn" title="Copy phone number">Copy</button>
+          </div>
+        </div>
+
+        <!-- Email Contact Tile -->
+        <div class="contact-tile">
+          <div class="contact-tile-info">
+            <div class="contact-tile-icon">
+              <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <div>
+              <div class="contact-tile-label">Direct Email</div>
+              <div class="contact-tile-val">matthewpjett@gmail.com</div>
+            </div>
+          </div>
+          <div style="display: flex; gap: 0.4rem;">
+            <a href="mailto:matthewpjett@gmail.com" class="btn btn-primary btn-sm" title="Compose email">Email</a>
+            <button type="button" class="btn btn-secondary btn-sm" id="copyModalEmailBtn" title="Copy email address">Copy</button>
+          </div>
+        </div>
+
+        <!-- Location Tile -->
+        <div class="contact-tile">
+          <div class="contact-tile-info">
+            <div class="contact-tile-icon">
+              <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              </svg>
+            </div>
+            <div>
+              <div class="contact-tile-label">Location</div>
+              <div class="contact-tile-val">Denham Springs, Louisiana</div>
+            </div>
+          </div>
+          <span class="chip">US Central</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="brand-monogram" style="width: 2rem; height: 2rem; font-size: 0.85rem;">MJ</div>
+        <span>Matthew Jett • LSU ISDS '26</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about" class="nav-link">Top</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="./project.html" class="nav-link">Project Showcase</a>
+        <a href="#" class="nav-link js-open-contact">Contact</a>
+      </div>
+
+      <div class="footer-copy">
+        &copy; 2026 Matthew Jett. Published with GitHub Pages.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
