@@ -1,80 +1,64 @@
 # Matthew Jett — Personal Resume & Portfolio Website
 
-A modern, responsive, two-page personal website for **Matthew Jett**, an Information Systems and Decision Sciences (ISDS) student at Louisiana State University (LSU).
+A clean, responsive, two-page personal website for **Matthew Jett**, an Information Systems and Decision Sciences (ISDS) student at Louisiana State University (LSU).
 
 ---
 
-## 🚀 Live Site Preview & Structure
+## 🚀 Website Pages & Features
 
-- **Resume & Profile (Single-Page Design)**: [`index.html`](./index.html)
-  - Interactive hero section with LSU credentials & Denham Springs, LA location.
-  - One-click email copy & interactive "Contact Me" button with phone reveal (`(225) 788-1050`).
-  - Education details, graduation timeline (`May 2026`), and interactive coursework chips.
-  - Chronological work experience timeline:
-    - *Server* — ZEA Rotisserie and Bar
-    - *Marketing Associate* — Scotts Miracle-Gro
-    - *Service Assistant* — C&M Outdoor Power
-    - *Pro Shop Attendant* — Carter Plantation Golf Resort
-  - Categorized technical & operational skills (Python, HTML, Excel, Business Analytics).
-  - Campus leadership with LSU Sigma Chi Fraternity (Gamma Iota chapter).
-  - "Print Resume" mode formatted specifically for 1-page paper / PDF export (`@media print`).
+- **Resume (Single-Page Design)**: [`index.html`](./index.html)
+  - Centered executive resume document layout matching Matthew's formal resume.
+  - Complete education details (LSU ISDS '26) and related business/analytics coursework.
+  - Experience timeline with exact bullet points (ZEA Rotisserie, Scotts Miracle-Gro, C&M Outdoor Power, Carter Plantation).
+  - Categorized technical & operational skills.
+  - Interactive "Contact Me" modal revealing direct phone `(225) 788-1050` and email `matthewpjett@gmail.com`.
+  - Clean "Print / Save PDF" mode formatted for 1-page paper printouts (`@media print`).
+  - Dark/Light document theme toggle.
 - **Project Showcase (Case Study)**: [`project.html`](./project.html)
   - Deep-dive into *Retail Inventory Optimization & Decision Support Analytics*.
-  - Business problem statement, end-to-end data pipeline diagram, and interactive dashboard mockups.
-  - Python restock threshold and safety-stock logic implementation.
-  - Quantifiable metrics: 98.5% inventory accuracy, 40% reduction in stockouts, 15+ weekly labor hours saved.
+  - System architecture diagrams and interactive dashboard mockups.
+  - Python safety-stock and dynamic reorder threshold logic.
+  - Quantifiable metrics: 98.5% inventory accuracy, 40% reduction in stockouts.
 
 ---
 
-## 🛠️ Technology Stack
+## ⚡ How to Publish Using Cloudflare Pages
 
-- **HTML5**: Semantic, accessible markup.
-- **Vanilla CSS3**: Custom design system with glassmorphism, responsive grid & flexbox, CSS variables, and `@media print` styling.
-- **Vanilla JavaScript**: Lightweight interactivity for contact modals, mobile navigation, clipboard copy, and smooth scrolling.
-- **Zero build dependencies**: 100% static and compatible out of the box with GitHub Pages.
+Cloudflare Pages is ultra-fast, free, and hosts your static website globally.
+
+### Option A: Connect to GitHub (Automatic Continuous Deployment — Recommended)
+
+1. Log into your [Cloudflare Dashboard](https://dash.cloudflare.com/).
+2. In the left navigation menu, click **Workers & Pages**.
+3. Click the **Create application** button (or **Create** > **Pages**).
+4. Click the **Connect to Git** button.
+5. Select your GitHub account (`jett-dot3`) and choose the repository: **`Team-Website`**.
+6. Set the build configuration:
+   - **Project name**: `matthew-jett` (or `team-website`)
+   - **Production branch**: `main`
+   - **Framework preset**: `None`
+   - **Build command**: *(Leave blank)*
+   - **Build output directory**: `/` *(Leave blank or `/`)*
+7. Click **Save and Deploy**.
+
+Cloudflare will deploy your site in ~15 seconds and give you a live URL:  
+👉 **`https://matthew-jett.pages.dev`** (or `https://team-website.pages.dev`).  
+Any future `git push` to your repository will automatically update your live site!
 
 ---
 
-## 🌐 How to Publish to GitHub Pages
+### Option B: Direct Upload (Deploy in 10 seconds without connecting Git)
 
-Follow these simple steps in your terminal to publish your website live to the web:
-
-### Step 1: Commit and Push Your Files to GitHub
-
-Run these commands in PowerShell or Git Bash from this folder:
-
-```powershell
-# 1. Stage all changes and new assets
-git add .
-
-# 2. Create a commit
-git commit -m "Launch Matthew Jett resume and project website"
-
-# 3. Push to your GitHub repository
-git push origin main
-```
-
-### Step 2: Enable GitHub Pages in Your Repository
-
-1. Open your repository on GitHub:  
-   👉 **[https://github.com/jett-dot3/Team-Website](https://github.com/jett-dot3/Team-Website)**
-2. Click on the **Settings** tab at the top.
-3. In the left-hand sidebar under "Code and automation", click **Pages**.
-4. Under **Build and deployment** > **Source**, select **Deploy from a branch**.
-5. Under **Branch**, choose **`main`** and leave the folder set to **`/(root)`**.
-6. Click **Save**.
-
-Within 1–2 minutes, GitHub will build and host your site publicly at:  
-👉 **`https://jett-dot3.github.io/Team-Website/`**
+1. In your Cloudflare Dashboard, go to **Workers & Pages** > **Create application** > **Pages**.
+2. Select the **Upload assets** tab.
+3. Enter your project name (e.g. `matthew-jett`).
+4. Drag and drop this whole **`Team-Website`** folder into the upload box.
+5. Click **Deploy site**.
+6. Your website is immediately live on your `.pages.dev` URL!
 
 ---
 
 ## 💻 Local Testing
 
-To preview the website locally on your computer:
-- Double-click `index.html` to open it directly in any web browser, OR
-- Start a local HTTP server:
-  ```powershell
-  python -m http.server 8000
-  ```
-  Then visit `http://localhost:8000` in your browser.
+You can preview the website locally at any time:
+- Double-click [`index.html`](./index.html) to open it directly in Edge, Chrome, or Firefox.
