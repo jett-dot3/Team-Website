@@ -152,5 +152,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // --- Theme Toggle (Classic Paper vs Dark Resume) ---
+  const themeToggleBtn = document.getElementById('themeToggleBtn');
+  if (themeToggleBtn) {
+    // Check saved preference
+    const savedTheme = localStorage.getItem('mj_resume_theme');
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark-resume');
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-resume');
+      const isDark = document.body.classList.contains('dark-resume');
+      localStorage.setItem('mj_resume_theme', isDark ? 'dark' : 'light');
+    });
+  }
+
   window.addEventListener('scroll', highlightNavigation);
 });
